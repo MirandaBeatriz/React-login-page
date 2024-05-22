@@ -1,0 +1,93 @@
+.Login{
+    width: 450px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+
+    .title{
+        text-align: center;
+        font-size: 30px;
+        color: #ffff;
+        margin-bottom: 15px;
+    }
+
+    .formItem{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px auto;
+
+        input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 25px;
+            transition: all .3s;
+
+            &::placeholder{
+                font-family: 'Helvetica';
+                color: #fff;
+            }
+
+            &:focus{
+                border: 2px solid #c3c0ee;
+            }
+          }
+
+        .icon {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .button{
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                background: #c3c0ee;
+            }
+        }
+    }
+
+    .recall{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+
+        input{
+            accent-color: #fff;
+            margin-right: 4px;
+        }
+    }
+
+    .signup{
+        font-size: 16px;
+        text-align: center;
+        margin: 20px 0 15px;
+
+        a{
+            font-weight: 600;
+        }
+    }
+}
